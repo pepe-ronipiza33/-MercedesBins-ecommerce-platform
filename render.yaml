@@ -7,8 +7,6 @@ services:
     plan: starter
     buildCommand: cd server && npm install
     startCommand: cd server && npm start
-    # Root directory where your Node app lives in the repo
-    root: server
     envVars:
       - key: MONGODB_URI
         value: "REPLACE_WITH_YOUR_ATLAS_CONNECTION_STRING"
@@ -29,7 +27,6 @@ services:
     plan: starter
     buildCommand: cd frontend && npm install && npm run build
     staticPublish: frontend/dist
-    root: frontend
     envVars:
       - key: VITE_API_URL
         value: "REPLACE_WITH_BACKEND_URL_OR_LEAVE_EMPTY"
