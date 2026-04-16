@@ -1,0 +1,6 @@
+# Ignore local Node env and dependencies
+server/.env
+server/node_modules
+
+# OS files
+.DS_Store
