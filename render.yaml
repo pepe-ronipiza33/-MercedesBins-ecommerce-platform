@@ -14,6 +14,8 @@ services:
         value: "REPLACE_WITH_YOUR_ATLAS_CONNECTION_STRING"
       - key: JWT_SECRET
         value: "REPLACE_WITH_A_STRONG_RANDOM_SECRET"
+      - key: STRIPE_SECRET_KEY
+        value: "REPLACE_WITH_YOUR_STRIPE_SECRET_KEY"
       - key: NODE_ENV
         value: production
       - key: PORT
