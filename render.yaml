@@ -19,7 +19,7 @@ services:
       - key: PORT
         value: "5000"
 
-  - type: web
+  - type: static_site
     name: ecommerce-frontend
     env: static_site
     region: oregon
@@ -27,6 +27,7 @@ services:
     plan: starter
     buildCommand: cd frontend && npm install && npm run build
     staticPublish: frontend/dist
+    root: frontend
     envVars:
       - key: VITE_API_URL
         value: "REPLACE_WITH_BACKEND_URL_OR_LEAVE_EMPTY"
