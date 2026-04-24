@@ -5,8 +5,8 @@ services:
     region: oregon
     branch: main
     plan: starter
-    buildCommand: cd server && npm install
-    startCommand: cd server && npm start
+    buildCommand: npm install
+    startCommand: npm start
     envVars:
       - key: MONGODB_URI
         sync: false
