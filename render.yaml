@@ -9,11 +9,11 @@ services:
     startCommand: cd server && npm start
     envVars:
       - key: MONGODB_URI
-        value:"mongodb+srv://ecommerce-admin:gOIVKtPuAz6yEqah@cluster0.sfplf4v.mongodb.net/ecommerce?appName=Cluster0"
+        sync: false
       - key: JWT_SECRET
-        value:"c437bfcdf6b60d96b4bdea05d862441fd8efb72baed5ca6078a8cbcbde4b8f5c9aad2f4dd9def23188042b0fad55f132"
+        sync: false
       - key: STRIPE_SECRET_KEY
-        value:"sk_test_51TNIO00PxcFeOORsO8ArWDgHmaCuyls874ki08OexQE2wOAhz43iCufRrL60MPe3sXNGuwUTfQZQ4IE7bYLQbaVb00jB2ln3AV
+        sync: false
       - key: NODE_ENV
         value: production
       - key: PORT
@@ -26,4 +26,4 @@ static_sites:
     publishPath: dist
     envVars:
       - key: VITE_API_URL
-        value: "https://ecommerce-backend.onrender.com"
+        sync: false
